@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse - Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Pulse</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="profile.html">Profile</a>
+                <a href="#" onclick="logout()">Logout</a>
+            </div>
+        </header>
+
+        <main>
+            <h1>Profile</h1>
+            <p id="userEmail"></p>
+            <button onclick="deleteAccount()">Delete Account</button>
+        </main>
+    </div>
+
+    <script src="firebase.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

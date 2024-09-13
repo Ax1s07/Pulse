@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Pulse</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="profile.html" id="profileLink">Profile</a>
+                <a href="#" onclick="logout()">Logout</a>
+            </div>
+        </header>
+
+        <main>
+            <div class="post-section">
+                <textarea id="postContent" placeholder="What's on your mind?"></textarea>
+                <button onclick="postMessage()">Post</button>
+            </div>
+
+            <div class="feed-section">
+                <h2>Feed</h2>
+                <div id="feed" class="feed"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="firebase.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

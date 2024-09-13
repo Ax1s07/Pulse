@@ -1,0 +1,137 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F3F4F6; /* Accent Color: Gray */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF; /* Secondary Color: White */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #E0E0E0; /* Light Gray for border */
+}
+
+header .logo {
+    font-size: 1.8em;
+    color: #0077B5; /* Primary Color: Blue */
+    font-weight: bold;
+}
+
+header .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-links a {
+    color: #0077B5; /* Primary Color: Blue */
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header .nav-links a:hover {
+    text-decoration: underline;
+}
+
+.post-section {
+    margin-bottom: 20px;
+}
+
+.post-section textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #E0E0E0;
+}
+
+.post-section button {
+    background-color: #0077B5; /* Primary Color: Blue */
+    color: #FFFFFF; /* Text Color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.post-section button:hover {
+    background-color: #005B9A; /* Darker Blue for hover */
+}
+
+.feed-section {
+    border-top: 1px solid #E0E0E0;
+    padding-top: 20px;
+}
+
+.feed-section .feed {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feed-section .post {
+    background-color: #FFFFFF; /* Secondary Color: White */
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.feed-section .post img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.feed-section .post-content {
+    margin-top: 10px;
+}
+
+.feed-section .post-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.feed-section .post-actions button {
+    background-color: #0077B5; /* Primary Color: Blue */
+    color: #FFFFFF; /* Text Color */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.feed-section .post-actions button:hover {
+    background-color: #005B9A; /* Darker Blue for hover */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .nav-links a {
+        font-size: 0.9em;
+    }
+
+    .post-section textarea {
+        width: 100%;
+    }
+}
